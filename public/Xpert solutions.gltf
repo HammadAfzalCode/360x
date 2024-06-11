@@ -1,0 +1,1086 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "THREE.GLTFExporter"
+  },
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "matrix": [
+        -0.9993908270190955,
+        0.003647990759127141,
+        0.03470831360797011,
+        0,
+        0.0035683193030987812,
+        0.9999908554886192,
+        -0.0023571246233991578,
+        0,
+        0.034716594986245526,
+        0.0022318383813405705,
+        0.9993947052741478,
+        0,
+        -23.374488456700607,
+        22.032254262288003,
+        -22.7017252773909,
+        1
+      ],
+      "name": "Shape 5",
+      "mesh": 0
+    },
+    {
+      "matrix": [
+        -0.9993908270190955,
+        0.003647990759127121,
+        0.034708313607970054,
+        0,
+        -0.0035683193030988367,
+        -0.9999908554886193,
+        0.002357124623399022,
+        0,
+        0.03471659498624548,
+        0.002231838381340616,
+        0.9993947052741476,
+        0,
+        -23.374488456700618,
+        -21.967745737712004,
+        -20.701725277390896,
+        1
+      ],
+      "name": "Shape 4",
+      "mesh": 1
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        57.53254478300484,
+        0.34625438047117285,
+        -2.1571200887840547,
+        1
+      ],
+      "name": "Group",
+      "children": [
+        1,
+        2
+      ]
+    },
+    {
+      "matrix": [
+        0.9993908270190958,
+        -0.003647990759126974,
+        -0.03470831360797002,
+        0,
+        0.003568319303098594,
+        0.9999908554886193,
+        -0.0023571246233991946,
+        0,
+        0.0347165949862455,
+        0.0022318383813405675,
+        0.9993947052741478,
+        0,
+        -96.0468165277308,
+        111.92537661856232,
+        -18.318207913246685,
+        1
+      ],
+      "name": "Shape",
+      "mesh": 2
+    },
+    {
+      "matrix": [
+        10,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        -44.79784375,
+        0,
+        0,
+        1
+      ],
+      "name": "Group 2",
+      "children": [
+        3,
+        4
+      ]
+    },
+    {
+      "matrix": [
+        0.6951113786223291,
+        0.38622002697262997,
+        -0.6063450025150915,
+        0,
+        -0.48568813262222815,
+        0.8741321626790385,
+        0,
+        0,
+        0.5300256683781439,
+        0.294494571996375,
+        0.7952016963795876,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Directional Light",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      }
+    },
+    {
+      "matrix": [
+        0.8439324384461431,
+        4.336808689942018e-19,
+        -0.5364494751030584,
+        0,
+        -0.005388873296809503,
+        0.9999495432519362,
+        -0.008477676263883108,
+        0,
+        0.5364224076070441,
+        0.010045444253206205,
+        0.8438898563597135,
+        0,
+        463.39569734142833,
+        68.83471828600135,
+        811.5798909022104,
+        1
+      ],
+      "camera": 0
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "name": "Default Ambient Light"
+    },
+    {
+      "name": "Scene 1",
+      "children": [
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 288,
+      "byteLength": 288,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 192,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 144,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 912,
+      "byteLength": 288,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1200,
+      "byteLength": 288,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1488,
+      "byteLength": 192,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1680,
+      "byteLength": 144,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1824,
+      "byteLength": 432,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2256,
+      "byteLength": 432,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2688,
+      "byteLength": 288,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2976,
+      "byteLength": 240,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3216,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        13.796661376953125,
+        89.48087310791016,
+        45
+      ],
+      "min": [
+        -60.84197235107422,
+        0.0023585523013025522,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.8168060183525085,
+        0.9999845027923584,
+        1
+      ],
+      "min": [
+        -0.8267919421195984,
+        -0.7015961408615112,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 36,
+      "max": [
+        23
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        8.504777908325195,
+        89.48087310791016,
+        45
+      ],
+      "min": [
+        -60.84197235107422,
+        0.0023585523013025522,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.8789278864860535,
+        0.9999857544898987,
+        1
+      ],
+      "min": [
+        -0.8267919421195984,
+        -0.5625078678131104,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 36,
+      "max": [
+        23
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        110.98159790039062,
+        2.842170943040401e-14,
+        45
+      ],
+      "min": [
+        0,
+        -223.54837036132812,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        0.8306238055229187,
+        0.9999865889549255,
+        1
+      ],
+      "min": [
+        -0.8292496800422668,
+        -0.9994630813598633,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5125,
+      "count": 60,
+      "max": [
+        35
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 1,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "parameters": {
+              "width": 74.63863410652928,
+              "subdivisions": 40,
+              "roundness": 0,
+              "extrudeBevelSize": 0,
+              "extrudeBevelSegments": 3,
+              "windingRule": 0,
+              "height": 89.47851514232401,
+              "depth": 45,
+              "shape": {
+                "points": [
+                  {
+                    "fi": 0.5974431429271592,
+                    "id": "41bae0b7-84e0-40c6-8aa1-fe94ea3c1827",
+                    "data": {
+                      "position": [
+                        0.03472933509101495,
+                        0.0023585522426117227
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          0.03472933509101495,
+                          0.0023585522426117227
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          0.03472933509101495,
+                          0.0023585522426117227
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 1.0959957253848098,
+                    "id": "1e378013-20d0-4e46-a9f8-d20103ebadc6",
+                    "data": {
+                      "position": [
+                        13.796661268479813,
+                        13.979639404998615
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          13.796661268479813,
+                          13.979639404998615
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          13.796661268479813,
+                          13.979639404998615
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 1.4896934708666945,
+                    "id": "8cc51cdd-31a0-4e00-8bbe-c6fb512456d2",
+                    "data": {
+                      "position": [
+                        -39.44590725587129,
+                        89.36171305475787
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          -39.44590725587129,
+                          89.36171305475787
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          -39.44590725587129,
+                          89.36171305475787
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 2.10090526053364,
+                    "id": "48459886-1211-4e55-aff1-29049715d19a",
+                    "data": {
+                      "position": [
+                        -60.841972838049465,
+                        89.48087369456663
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          -60.841972838049465,
+                          89.48087369456663
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          -60.841972838049465,
+                          89.48087369456663
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  }
+                ],
+                "isClosed": true,
+                "roundness": 0,
+                "shapeHoles": []
+              },
+              "type": "VectorGeometry"
+            },
+            "shape": {
+              "points": [
+                0.03472933509101495,
+                0.0023585522426117227,
+                0.03472933509101495,
+                0.0023585522426117227,
+                0.03472933509101495,
+                0.0023585522426117227,
+                0,
+                13.796661268479813,
+                13.979639404998615,
+                13.796661268479813,
+                13.979639404998615,
+                13.796661268479813,
+                13.979639404998615,
+                0,
+                -39.44590725587129,
+                89.36171305475787,
+                -39.44590725587129,
+                89.36171305475787,
+                -39.44590725587129,
+                89.36171305475787,
+                0,
+                -60.841972838049465,
+                89.48087369456663,
+                -60.841972838049465,
+                89.48087369456663,
+                -60.841972838049465,
+                89.48087369456663,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "type": "VectorGeometry"
+          },
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 1,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extras": {
+            "parameters": {
+              "width": 69.34675048762317,
+              "subdivisions": 40,
+              "roundness": 0,
+              "extrudeBevelSize": 0,
+              "extrudeBevelSegments": 3,
+              "windingRule": 0,
+              "height": 89.47851514232401,
+              "depth": 45,
+              "shape": {
+                "points": [
+                  {
+                    "fi": 0.5974431429271592,
+                    "id": "41bae0b7-84e0-40c6-8aa1-fe94ea3c1827",
+                    "data": {
+                      "position": [
+                        0.03472933509101495,
+                        0.0023585522426117227
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          0.03472933509101495,
+                          0.0023585522426117227
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          0.03472933509101495,
+                          0.0023585522426117227
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 1.0959957253848098,
+                    "id": "1e378013-20d0-4e46-a9f8-d20103ebadc6",
+                    "data": {
+                      "position": [
+                        8.504777649573706,
+                        15.610888881344266
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          8.504777649573706,
+                          15.610888881344266
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          8.504777649573706,
+                          15.610888881344266
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 1.4896934708666945,
+                    "id": "8cc51cdd-31a0-4e00-8bbe-c6fb512456d2",
+                    "data": {
+                      "position": [
+                        -41.74200594614222,
+                        89.37889986401284
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          -41.74200594614222,
+                          89.37889986401284
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          -41.74200594614222,
+                          89.37889986401284
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 2.10090526053364,
+                    "id": "48459886-1211-4e55-aff1-29049715d19a",
+                    "data": {
+                      "position": [
+                        -60.841972838049465,
+                        89.48087369456663
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          -60.841972838049465,
+                          89.48087369456663
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          -60.841972838049465,
+                          89.48087369456663
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  }
+                ],
+                "isClosed": true,
+                "roundness": 0,
+                "shapeHoles": []
+              },
+              "type": "VectorGeometry"
+            },
+            "shape": {
+              "points": [
+                0.03472933509101495,
+                0.0023585522426117227,
+                0.03472933509101495,
+                0.0023585522426117227,
+                0.03472933509101495,
+                0.0023585522426117227,
+                0,
+                8.504777649573706,
+                15.610888881344266,
+                8.504777649573706,
+                15.610888881344266,
+                8.504777649573706,
+                15.610888881344266,
+                0,
+                -41.74200594614222,
+                89.37889986401284,
+                -41.74200594614222,
+                89.37889986401284,
+                -41.74200594614222,
+                89.37889986401284,
+                0,
+                -60.841972838049465,
+                89.48087369456663,
+                -60.841972838049465,
+                89.48087369456663,
+                -60.841972838049465,
+                89.48087369456663,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "type": "VectorGeometry"
+          },
+          "indices": 7
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "extras": {
+            "parameters": {
+              "width": 110.98159556718808,
+              "subdivisions": 40,
+              "roundness": 0,
+              "extrudeBevelSize": 0,
+              "extrudeBevelSegments": 1,
+              "windingRule": 0,
+              "height": 223.548369784277,
+              "depth": 45,
+              "shape": {
+                "points": [
+                  {
+                    "fi": 0.5328590606347303,
+                    "id": "0c98adbf-8299-4800-82d4-46de78197862",
+                    "data": {
+                      "position": [
+                        0,
+                        2.842170943040401e-14
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          0,
+                          2.842170943040401e-14
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          0,
+                          2.842170943040401e-14
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 0.9921614739471449,
+                    "id": "fd649280-b68d-49e3-8234-04425a241a8c",
+                    "data": {
+                      "position": [
+                        34.534374255093795,
+                        -0.17899262280015193
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          34.534374255093795,
+                          -0.17899262280015193
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          34.534374255093795,
+                          -0.17899262280015193
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 1.552637025944006,
+                    "id": "f0d2e8b8-92be-4206-8ad2-b9fbedd6458a",
+                    "data": {
+                      "position": [
+                        110.98159556718808,
+                        -109.89130087591607
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          110.98159556718808,
+                          -109.89130087591607
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          110.98159556718808,
+                          -109.89130087591607
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 1.9394692029455085,
+                    "id": "1d60d8fa-d74b-446c-bd1f-b50833c32efe",
+                    "data": {
+                      "position": [
+                        35.52752341673015,
+                        -222.44540421937407
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          35.52752341673015,
+                          -222.44540421937407
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          35.52752341673015,
+                          -222.44540421937407
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 2.395253201016028,
+                    "id": "33247a65-8f27-4b67-a550-5a303cec6249",
+                    "data": {
+                      "position": [
+                        1.8818680800595047,
+                        -223.54836978427699
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          1.8818680800595047,
+                          -223.54836978427699
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          1.8818680800595047,
+                          -223.54836978427699
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "fi": 2.842939843676859,
+                    "id": "c0dcd4aa-f963-496a-96d2-8bcb4482ce83",
+                    "data": {
+                      "position": [
+                        78.98874715907469,
+                        -109.13910438246852
+                      ],
+                      "controlPrevious": {
+                        "position": [
+                          78.98874715907469,
+                          -109.13910438246852
+                        ]
+                      },
+                      "controlNext": {
+                        "position": [
+                          78.98874715907469,
+                          -109.13910438246852
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  }
+                ],
+                "isClosed": true,
+                "roundness": 0,
+                "shapeHoles": []
+              },
+              "type": "VectorGeometry"
+            },
+            "shape": {
+              "points": [
+                0,
+                2.842170943040401e-14,
+                0,
+                2.842170943040401e-14,
+                0,
+                2.842170943040401e-14,
+                0,
+                34.534374255093795,
+                -0.17899262280015193,
+                34.534374255093795,
+                -0.17899262280015193,
+                34.534374255093795,
+                -0.17899262280015193,
+                0,
+                110.98159556718808,
+                -109.89130087591607,
+                110.98159556718808,
+                -109.89130087591607,
+                110.98159556718808,
+                -109.89130087591607,
+                0,
+                35.52752341673015,
+                -222.44540421937407,
+                35.52752341673015,
+                -222.44540421937407,
+                35.52752341673015,
+                -222.44540421937407,
+                0,
+                1.8818680800595047,
+                -223.54836978427699,
+                1.8818680800595047,
+                -223.54836978427699,
+                1.8818680800595047,
+                -223.54836978427699,
+                0,
+                78.98874715907469,
+                -109.13910438246852,
+                78.98874715907469,
+                -109.13910438246852,
+                78.98874715907469,
+                -109.13910438246852,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "type": "VectorGeometry"
+          },
+          "indices": 11
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Directional Light",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "intensity": 0.7,
+          "type": "directional"
+        }
+      ]
+    }
+  },
+  "cameras": [
+    {
+      "type": "orthographic",
+      "orthographic": {
+        "xmag": 49.14525345057422,
+        "ymag": 25.037235213790435,
+        "zfar": 100000,
+        "znear": 0
+      }
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ]
+}

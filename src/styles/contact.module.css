@@ -1,0 +1,42 @@
+
+.label {
+    color: #fff ;
+   
+    
+}
+.input{
+    /* border: none; */
+    background-color: #181815;
+    border-left: #181815;
+    border-right: #181815;
+    border-top: #181815;
+    color:white;
+    outline: none;
+    font-family: clash display;
+    
+    /* width: 20px; */
+    /* border-bottom: blue; */
+    
+}
+.input:hover,.input2:hover {
+    /* border-width: 1px;     */
+    /* border-bottom: #D0140F ; */
+    border-radius:1px;
+    border-color: #D0140F;
+    transition:10ms ease-in;
+}
+
+
+.input2{
+    background-color: #181815;
+    border-left: #181815;
+    border-right: #181815;
+    border-top: #181815;
+    color:white;
+    outline: none;
+    width: 98%;
+    margin-top  : 15px;
+    /* margin-bottom:5px ; */
+    
+}
+

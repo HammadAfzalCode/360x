@@ -1,0 +1,21 @@
+<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="facebook 1" clip-path="url(#clip0_1_2966)">
+<g id="Clip path group">
+<mask id="mask0_1_2966" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="31">
+<g id="clip0_1909_4797">
+<path id="Vector" d="M30 0.0458984H0V30.0459H30V0.0458984Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_1_2966)">
+<g id="Group">
+<path id="Vector_2" d="M30 15.0459C30 6.76074 23.2852 0.0458984 15 0.0458984C6.71484 0.0458984 0 6.76074 0 15.0459C0 23.3311 6.71484 30.0459 15 30.0459C15.0879 30.0459 15.1758 30.0459 15.2637 30.04V18.3682H12.041V14.6123H15.2637V11.8467C15.2637 8.6416 17.2207 6.89551 20.0801 6.89551C21.4512 6.89551 22.6289 6.99512 22.9688 7.04199V10.3936H21C19.4473 10.3936 19.1426 11.1318 19.1426 12.2158V14.6064H22.8633L22.377 18.3623H19.1426V29.4658C25.4121 27.667 30 21.8955 30 15.0459Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_2966">
+<rect width="30" height="31" fill="white"/>
+</clipPath>
+</defs>
+</svg>

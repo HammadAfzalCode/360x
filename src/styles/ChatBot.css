@@ -1,0 +1,35 @@
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 9999;
+    max-width: 300px; /* Adjust width as needed */
+  }
+  
+  .messages-container {
+    max-height: 300px; /* Add a max height and enable scrolling for long conversations */
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+  }
+  
+  .chatbot {
+    background-color: #DCF8C6; /* Light green for chatbot messages */
+    align-self: flex-start;
+  }
+  
+  .user {
+    background-color: #F0F0F0; /* Light gray for user messages */
+    align-self: flex-end;
+  }
+  

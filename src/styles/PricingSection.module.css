@@ -1,0 +1,22 @@
+.title {
+  font-size: 3rem;
+  font-weight: 200;
+  color: #fff;
+  margin-top: 5rem;
+  font-family: "Clash Display normal";
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Add this back */
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px; /* Add some space between the cards */
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center; /* Center the cards on small screens */
+  }
+}

@@ -1,0 +1,271 @@
+import React, { useState, useEffect, useRef } from "react";
+import { Box, Button } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import axios from "axios";
+import { toast } from "react-toastify"; // Assuming you are using toast notifications
+
+const useStyles = makeStyles({
+  chatContainer: {
+    position: "fixed",
+    bottom: 20,
+    right: 20,
+    backgroundColor: "#e0e0e0",
+    borderRadius: 10,
+    padding: "20px",
+    zIndex: 9999,
+    width: "400px",
+    height: 400,
+    overflowY: "auto",
+    display: "none",
+  },
+  show: {
+    display: "block",
+  },
+  redMessageIcon: {
+    color: "#FF0000",
+  },
+  conversationBox: {
+    marginTop: "20px",
+    display: "flex",
+    flexDirection: "column-reverse",
+  },
+  userMessage: {
+    marginBottom: "10px",
+    display: "flex",
+    justifyContent: "flex-start",
+    padding: "20px",
+    width: "100px",
+  },
+  botMessage: {
+    marginBottom: "10px",
+    display: "flex",
+    justifyContent: "flex-end",
+  },
+});
+
+const ChatBot = () => {
+  const [formData, setFormData] = useState({
+    message: "",
+  });
+
+  const classes = useStyles();
+
+  const [step, setStep] = useState(1);
+  const [showChat, setShowChat] = useState(false);
+  const [conversation, setConversation] = useState([]);
+  const conversationBoxRef = useRef(null);
+
+  useEffect(() => {
+    const conversationBox = conversationBoxRef.current;
+    if (conversationBox) {
+      const { scrollHeight, clientHeight, scrollTop } = conversationBox;
+      const atBottom = scrollHeight - clientHeight === scrollTop;
+
+      if (atBottom) {
+        conversationBox.scrollTop = scrollHeight;
+      }
+    }
+  }, [conversation]);
+
+  useEffect(() => {
+    if (step === 5) {
+      // Close the chat after displaying the "Thank you!" message
+      setShowChat(false);
+      sendEmail(formData); // Send email on step 5
+    }
+  }, [step]);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: formData.message }), // Send only the message field
+      });
+
+      if (!response.ok) throw new Error("Failed to send email");
+
+      const result = await response.json();
+      console.log(result);
+      toast.success(result.message); // Use toast.success to display a success message
+
+      setFormData({
+        ...formData,
+        message: "", // Clear the message field
+      });
+
+      const nextStep = step + 1;
+
+      // Add the user message to the conversation
+      setConversation((prevConversation) => [
+        ...prevConversation,
+        { type: "user", content: formData.message },
+      ]);
+
+      // Determine the bot response based on the next step
+      let botResponse = "";
+      switch (nextStep) {
+        case 1:
+          botResponse = "Enter your First name:";
+          break;
+        case 2:
+          botResponse = "Enter your Last name:";
+          break;
+        case 3:
+          botResponse = "Please enter your email:";
+          break;
+        case 4:
+          botResponse = "Please enter your message:";
+          break;
+        case 5:
+          botResponse = "Thank you! Your information has been submitted";
+          break;
+        case 6:
+          setShowChat(false);
+          break;
+        default:
+          break;
+      }
+
+      // If botResponse is not empty, add it to the conversation after a delay
+      if (botResponse) {
+        setTimeout(() => {
+          setConversation((prevConversation) => [
+            ...prevConversation,
+            { type: "bot", content: botResponse },
+          ]);
+        }, 1000); // Delay for 1000 milliseconds (1 second)
+      }
+
+      // If step is less than 4, increment the step
+      if (nextStep <= 6) {
+        setStep(nextStep);
+      }
+
+      if (nextStep === 5) {
+        sendEmail(formData);
+      }
+    } catch (error) {
+      toast.error(error.message); // Use toast.error to display an error message
+      return; // Stop the execution if there's an error
+    }
+  };
+
+  const sendEmail = async (formData) => {
+    try {
+      // Make an HTTP POST request to your server API endpoint
+      const response = await axios.post("/api/send-email", formData);
+      console.log(response.data); // Log the response from the server
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
+
+  const handleChatToggle = () => {
+    setShowChat(!showChat);
+    if (!showChat) {
+      setConversation([]);
+    }
+  };
+
+  const renderMessage = () => {
+    return "Hello";
+  };
+
+  return (
+    <>
+      <Box className={classes.redMessageIcon} onClick={handleChatToggle}>
+        <img
+          src="/assets/envelope-solid.svg"
+          alt="Message"
+          style={{
+            maxWidth: "4%",
+            height: "auto",
+            marginLeft: "93%",
+            position: "relative",
+            bottom: "130px",
+            cursor: "pointer",
+          }}
+        />
+      </Box>
+
+      <Box className={`${classes.chatContainer} ${showChat ? classes.show : ""}`}>
+        <Button
+          onClick={handleChatToggle}
+          style={{
+            position: "absolute",
+            top: 5,
+            right: 5,
+            minWidth: 0,
+            padding: 0,
+            borderRadius: "50%",
+            width: 30,
+            height: 30,
+          }}
+        >
+          X
+        </Button>
+        <form onSubmit={handleSubmit}>
+          <p className={classes.BotMessages} style={{ justifyContent: "right", display: "flex" }}>{renderMessage()}</p>
+          <Box className={classes.conversationBox} ref={conversationBoxRef}>
+            {conversation.map((msg, index) => (
+              <div
+                key={index}
+                style={{
+                  display: 'flex',
+                  justifyContent: msg.type === 'user' ? 'flex-start' : 'flex-end',
+                  marginBottom: '10px',
+                }}
+              >
+                <div
+                  className={
+                    msg.type === "user"
+                      ? classes.userMessage
+                      : classes.botMessage
+                  }
+                  style={{
+                    backgroundColor: msg.type === 'user' ? '#FF0000' : '#00FF00',
+                    borderRadius: '10px',
+                    padding: '10px',
+                    maxWidth: '70%',
+                  }}
+                >
+                  {msg.content}
+                </div>
+              </div>
+            ))}
+          </Box>
+          {step < 5 && (
+            <div className={classes.message}>
+              <textarea
+                name="message"
+                placeholder={renderMessage()}
+                value={formData.message}
+                onChange={handleChange}
+                required
+                rows={6}
+                style={{ width: "300px", marginTop: "65%" , height:"40px"}}
+              />
+              <Button type="submit" style={{ color: "red", display: "flex", position: "relative", left: "320px", bottom: "50px" }}>
+                Send
+              </Button>
+            </div>
+          )}
+          {step === 5 && (
+            <p style={{ textAlign: "center", marginTop: "20px" }}>Thank you! Your information has been submitted.</p>
+          )}
+        </form>
+      </Box>
+    </>
+  );
+};
+
+export default ChatBot;

@@ -1,0 +1,168 @@
+.pricingCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  max-height: fit-content;
+  margin-bottom: 50px;
+}
+
+.pricingCard:hover {
+  transform: scale(1.05);
+  background: linear-gradient(
+    180deg,
+    rgba(74, 74, 74, 0.25) 0%,
+    rgba(74, 74, 74, 0.25) 100%
+  );
+  backdrop-filter: blur(16.25px);
+}
+.title {
+  color: #fff;
+  font-family: Clash Display;
+
+  font-size: 35px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.img {
+  margin-right: 10px;
+}
+
+.features {
+  font-family: Clash Display;
+  font-size: 15px;
+  color: #fff;
+
+  list-style: none;
+  padding: 0;
+}
+
+.feature {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.quoteButton {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quoteButton:hover {
+  background-color: #333;
+}
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #181815;
+  color: white; /* Make text white */
+  border: none; /* Remove border */
+  border-bottom: 1px solid white; /* Add white line below */
+  outline: none; /* Remove outline */
+}
+.textField {
+  width: 95%;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #181815;
+  color: white; /* Make text white */
+  font-family: "clash display";
+  border-bottom: 1px solid white; /* Add white line below */
+  outline: none; /* Remove outline */
+  border-top: #000;
+  border-right: #000;
+  border-left: #000;
+
+
+}
+
+.checkboxContainer {
+  display: block;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 8px; 
+  margin-bottom: 8px; 
+  background: #181815;
+  
+}
+
+.checkboxLabel {
+  color: #fff;
+  margin-left: 15px; 
+  font-family: "clash display";
+}
+.datePickerContainer{
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "clash display";
+  margin-left: 15px; 
+  background-color: #181815;
+  position: relative;
+
+}
+.react-datepicker {
+  background-color: black; /* Change the background color of selected days to black */
+}
+.dataPicker{
+  color: #FFF;
+  background-color: #181815 !important ;
+  display: flex;
+  align-items: center
+  
+}
+
+
+/* Style the custom checkbox */
+.checkboxContainer input {
+ 
+  top: 0;
+  left: 0;
+  color: #181815;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 10px;
+}
+
+/* Style the checkmark when the checkbox is checked */
+.checkboxContainer input:checked + .checkbox {
+  background-color: #161515; /* Checked background color */
+}
+
+/* Create the checkmark using a pseudo-element */
+.checkboxContainer input:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+/* Style the checkmark itself */
+.checkboxContainer input:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  background-color: #181815;
+
+  border: solid white;
+  border-width: 0 2px 2px 0;
+
+  transform: rotate(45deg);
+}
+

@@ -1,0 +1,87 @@
+@import url("https://api.fontshare.com/css?f[]=clash-display&display=swap");
+@import url("https://api.fontshare.com/css?f[]=font-name&display=swap");
+
+:root {
+  background: #181815;
+}
+
+.slick-list {
+  /* background-color: aqua; */
+  margin-left: 0px;
+}
+.box {
+  max-width: 12rem;
+  min-height: 101px;
+}
+
+@media (max-width: 844px) {
+  .box {
+    max-width: 12rem;
+  }
+}
+
+@media (max-width: 722px) {
+  .box {
+    max-width: 9rem;
+  }
+}
+@media (max-width: 560px) {
+  .box {
+    max-width: 6rem;
+  }
+}
+.css-100j4wo {
+  padding-bottom: 0;
+}
+/* @media (min-width:320px ) and (max-width:480) {
+    .styleButton{
+      display: flex;
+      flex-direction: row;
+      font-size: x-small;
+    }
+  } */
+/* @media (max-width:899px) and (min-width:240px){
+    .imageX{
+      width: 200px;
+      height: 500px;
+    }
+  } */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181815;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d0140f;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d01401;
+}
+/* globals.css or main.css */
+
+/* Style for TextField labels */
+.MuiInputLabel-root {
+  color: #fff; /* White color for label */
+}
+
+/* Style for input text */
+.MuiInputBase-input {
+  color: #fff; /* White color for input text */
+}
+
+/* Style for underline (normal state) */
+.MuiInput-underline:before {
+  border-bottom-color: #fff; /* White color for underline */
+}
+
+/* Style for underline (focused state) */
+.MuiInput-underline:after {
+  border-bottom-color: #fff; /* White color for underline when focused */
+}
+/*  */
+
