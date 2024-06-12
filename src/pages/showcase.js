@@ -1,11 +1,14 @@
-import React from 'react'
-import ShowcaseComponent from '../components/ShowcaseComponent'
-import Navbar from '../components/Navbar'
+import React from "react";
+import ShowcaseComponent from "../components/ShowcaseComponent";
+import Navbar from "../components/Navbar";
 
 const Showcase = () => {
   return (
-    <div><Navbar/><ShowcaseComponent/></div>
-  )
-}
+    <div style={{ position: "relative" }}>
+      <Navbar />
+      <ShowcaseComponent />
+    </div>
+  );
+};
 
-export default Showcase
+export default Showcase;

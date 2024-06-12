@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { Button, CardActionArea, CardActions, Stack } from "@mui/material";
 
-export default function MultiActionAreaCard({
+export default function MultiActionAreaCardDark({
   path,
   heading,
   description,
@@ -16,7 +16,8 @@ export default function MultiActionAreaCard({
     <Card
       sx={{
         maxWidth: "90vw",
-
+        backgroundColor: "#181815",
+        color: "#fff",
         marginX: "auto",
         display: "flex",
         marginBottom: "6rem",
@@ -53,6 +54,7 @@ export default function MultiActionAreaCard({
             cursor: "pointer",
             marginTop: "2rem",
             paddingX: "40px",
+            fontSize: { sm: "2rem", xl: "3rem" },
 
             "&:hover": {
               color: "#d0140f",
@@ -67,7 +69,7 @@ export default function MultiActionAreaCard({
           sx={{
             paddingX: "40px",
             fontFamily: "clash display",
-            color: "#181815",
+            color: "#fff",
             marginBottom: "2rem",
           }}
         >
@@ -76,7 +78,16 @@ export default function MultiActionAreaCard({
         <Button
           endIcon={<ArrowRightAltIcon />}
           variant="text"
-          sx={{ paddingX: "40px", marginBottom: "4rem", color: "#d0140f" }}
+          sx={{
+            paddingX: "40px",
+            marginBottom: "4rem",
+            color: "#d0140f",
+            "&:hover": {
+              color: "#fff",
+              borderColor: "#fff",
+              transition: "color .4s ease",
+            },
+          }}
         >
           Read More
         </Button>
@@ -84,11 +95,12 @@ export default function MultiActionAreaCard({
           {buttonList.map((button) => (
             <Button
               sx={{
-                color: "#d0140f",
-                borderColor: "#d0140f",
+                color: "#fff",
+                borderColor: "#fff",
+                dispaly: { sm: "flex" },
                 "&:hover": {
-                  color: "#181815",
-                  borderColor: "#181815",
+                  color: "#fff",
+                  borderColor: "#fff",
                   transition: "color .4s ease",
                 },
               }}

@@ -11,7 +11,7 @@ import Challenges from "../components/Challenges";
 import Contact from "../components/LetsWork";
 import Technologies from "../components/Technologies";
 import Head from "next/head";
-import ChatBot from "./ChatBot"
+import ChatBot from "./ChatBot";
 // import Casereport from "./casereport";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -54,9 +54,9 @@ const Home = () => {
       </Head>
       <Layout>
         {/* <Casereport/> */}
-      
+
         <TextBox />
-        <ChatBot/>
+        <ChatBot />
         <Revolutionizing />
         <OurClients />
         <Resonance />
