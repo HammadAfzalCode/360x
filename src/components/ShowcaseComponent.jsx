@@ -73,8 +73,8 @@ export default function BasicGrid() {
         top: "200px",
       }}
     >
-      <Grid container spacing={2}>
-        <Grid xs={8} lg={6}>
+      <Grid container spacing={1}>
+        <Grid xs={12} sm={12} md={6} lg={6} xl={4}>
           {/* <Item> */}
           <MultiActionAreaCardDark
             path="/project2.webp"
@@ -85,10 +85,10 @@ export default function BasicGrid() {
           />
           {/* </Item> */}
         </Grid>
-        <Grid xs={4} lg={6} xl={6}>
+        <Grid xs={12} sm={12} md={6} lg={6} xl={4}>
           {/* <Item> */}
           <MultiActionAreaCardDark
-            path="/project2.webp"
+            path="/project3.jpeg"
             heading="BetMakers - the next generation online batting platform"
             description="Creation of a next generation multi-tenant Horse Racing betting system
            hosted by one of the biggest players in the betting industry"
@@ -96,10 +96,10 @@ export default function BasicGrid() {
           />
           {/* </Item> */}
         </Grid>
-        <Grid xs={8}>
+        <Grid xs={12} sm={12} md={6} lg={6} xl={4}>
           {/* <Item> */}
           <MultiActionAreaCardDark
-            path="/project2.webp"
+            path="/project4.jpeg"
             heading="BetMakers - the next generation online batting platform"
             description="Creation of a next generation multi-tenant Horse Racing betting system
            hosted by one of the biggest players in the betting industry"
@@ -107,10 +107,10 @@ export default function BasicGrid() {
           />
           {/* </Item> */}
         </Grid>
-        <Grid xs={4} lg={12}>
+        <Grid xs={12} sm={12} md={6} lg={6} xl={4}>
           {/* <Item> */}
           <MultiActionAreaCardDark
-            path="/project2.webp"
+            path="/sportech-3.webp"
             heading="BetMakers - the next generation online batting platform"
             description="Creation of a next generation multi-tenant Horse Racing betting system
            hosted by one of the biggest players in the betting industry"
@@ -118,16 +118,6 @@ export default function BasicGrid() {
           />
           {/* </Item> */}
         </Grid>
-
-        {/* <Grid xs={4}>
-          <Item>xs=4</Item>
-        </Grid>
-        <Grid xs={4}>
-          <Item>xs=4</Item>
-        </Grid>
-        <Grid xs={8}>
-          <Item>xs=8</Item>
-        </Grid> */}
       </Grid>
     </Box>
   );

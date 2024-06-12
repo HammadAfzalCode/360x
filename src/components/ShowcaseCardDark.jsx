@@ -15,11 +15,11 @@ export default function MultiActionAreaCardDark({
   return (
     <Card
       sx={{
-        maxWidth: "90vw",
+        maxWidth: { xs: "90vw", md: "45vw", xl: "27vw" },
         backgroundColor: "#181815",
         color: "#fff",
         marginX: "auto",
-        display: "flex",
+        display: { xs: "block", sm: "flex" },
         marginBottom: "6rem",
         justifyContent: "space-around",
         border: "1px solid #fff",
@@ -41,8 +41,8 @@ export default function MultiActionAreaCardDark({
             background: "linear-gradient(to bottom right, #d0140f, #fae8e7)",
             objectFit: "contain",
 
-            width: "20vw",
-            height: "70vh",
+            width: { xs: "90vw", sm: "20vw", xl: "10vw" },
+            height: { sm: "70vh", md: "50vh" },
           }}
         />
       </CardActionArea>
@@ -50,11 +50,13 @@ export default function MultiActionAreaCardDark({
         <Typography
           variant="h3"
           sx={{
-            marginBottom: "4rem",
+            width: { md: "12rem" },
+            marginBottom: { xs: "2rem", sm: "2rem", lg: "2rem" },
             cursor: "pointer",
-            marginTop: "2rem",
-            paddingX: "40px",
-            fontSize: { sm: "2rem", xl: "3rem" },
+            marginTop: { xs: "1rem", sm: "2rem" },
+            overflow: "wrap",
+            paddingX: { xs: "0px", sm: "40px", md: "20px" },
+            fontSize: { xs: "1.5rem", sm: "2rem", md: "1.5rem", xl: "3rem" },
 
             "&:hover": {
               color: "#d0140f",
@@ -67,10 +69,12 @@ export default function MultiActionAreaCardDark({
         <Typography
           variant="body1"
           sx={{
-            paddingX: "40px",
+            width: { md: "13rem" },
+
+            paddingX: { xs: "0px", sm: "40px", md: "20px" },
             fontFamily: "clash display",
             color: "#fff",
-            marginBottom: "2rem",
+            marginBottom: { xs: "1rem", sm: "2rem", lg: "2rem" },
           }}
         >
           {description}
@@ -79,8 +83,8 @@ export default function MultiActionAreaCardDark({
           endIcon={<ArrowRightAltIcon />}
           variant="text"
           sx={{
-            paddingX: "40px",
-            marginBottom: "4rem",
+            paddingX: { xs: "0px", sm: "40px", md: "20px" },
+            marginBottom: { xs: "1rem", sm: "2rem", lg: "2rem" },
             color: "#d0140f",
             "&:hover": {
               color: "#fff",
@@ -91,10 +95,24 @@ export default function MultiActionAreaCardDark({
         >
           Read More
         </Button>
-        <Stack direction="row" spacing={2} sx={{ paddingX: "40px" }}>
+        <Stack
+          direction="row"
+          // spacing={1}
+          sx={{
+            // overflow: "wrap",
+            display: "flex",
+            flexWrap: "wrap",
+            flexDirection: "row",
+            gap: "8px",
+            // justifyContent: "space-between",
+            paddingX: { xs: "0px", sm: "40px", md: "20px" },
+            // width: { md: "12vw" },
+          }}
+        >
           {buttonList.map((button) => (
             <Button
               sx={{
+                fontSize: { md: "0.6rem" },
                 color: "#fff",
                 borderColor: "#fff",
                 dispaly: { sm: "flex" },
@@ -104,6 +122,7 @@ export default function MultiActionAreaCardDark({
                   transition: "color .4s ease",
                 },
               }}
+              size="small"
               variant="outlined"
             >
               {button}
